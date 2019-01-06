@@ -1,0 +1,12 @@
+<h1> Site has {{count}} words </h1>
+<a href="{% url 'home' %}">GO HOME!</a>
+<h3> Your text </h3>
+
+{{fulltext}}
+
+<h3> breakup </h3>
+
+{% for word,sum in wordlist%}
+{{word}} : {{sum}}
+<br />
+{% endfor %}
